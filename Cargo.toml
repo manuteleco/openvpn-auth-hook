@@ -1,0 +1,32 @@
+[package]
+name = "openvpn-auth-hook"
+version = "0.1.0"
+edition = "2021"
+authors = ["mrg.foss@gmail.com"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[workspace]
+members = ["encryption"]
+
+[dependencies]
+libc = "0.2"
+obfstr = "0.4.3"
+once_cell = "1"
+encryption = { path = "./encryption" }
+hex = "0.4.3"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+
+[build-dependencies]
+encryption = { path = "./encryption" }
+hex = "0.4.3"
+
+[dev-dependencies]
+tempfile = "3.6.0"

@@ -1,0 +1,4 @@
+[env]
+# Randomly generated once with `openssl rand -hex 32`
+BUILD_ARG_APP_ID = "30852f055d3e9399139a1d78fe9dc2c6ad065abf61e6d349ff93060112b01976"
+BUILD_ARG_PASSWORD = "<PASSWORD>"
