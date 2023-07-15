@@ -1,5 +1,7 @@
 # openvpn-auth-hook
 
+[![CICD](https://github.com/manuteleco/openvpn-auth-hook/actions/workflows/rust.yml/badge.svg)](https://github.com/manuteleco/openvpn-auth-hook/actions/workflows/rust.yml)
+
 `LD_PRELOAD` hook for the OpenVPN client to replace the `auth-user-pass`
 password on the fly.
 
